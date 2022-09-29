@@ -1,7 +1,9 @@
 body {
   font-family: 'Georgia', sans-serif;
 }
-
+*:focus{
+  outline: 2px solid blue;
+}
 .modal {
   width: 50%;
   border-radius: 4px;
@@ -13,9 +15,10 @@ body {
   position: fixed;
   top: 25%;
   left: 25%;
-  display: none;
+  
 }
-.modal:not(:focus-within) {
+
+dialog[open]:not(:focus-within) {
   outline: 1px solid red;
   transition: background-color 0.01s;
 }

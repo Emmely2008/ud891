@@ -1,0 +1,29 @@
+<h1>No Keyboard Trap</h1>
+<div>
+  <h3><a href="//webaim.org/standards/wcag/checklist#sc2.1.2">2.1.2 No Keyboard Trap</a></h3>
+  <p>
+    focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable
+    page elements using only a keyboard.
+  </p>
+</div>
+<p>
+Many users rely on a keyboard or keyboard interface to use the Web.  So it's important that web pages don't trap focus.
+</p>
+
+<p>
+Developers need to be careful when using DOM events that they don't accidentally create a keyboard trap.
+</p>
+
+<p>
+Here are some examples showing how easy it is to accidentally create a keyboard trap.
+</p>
+
+<h2>Example</h2>
+<form>
+  <label>Name</label>
+  <input type="text"></input>
+  <label>Focus trap </label>
+  <input type="text" onBlur="this.focus()"></input> 
+  <label>Unreachable</label>
+  <input type="text"></input>
+</form>
