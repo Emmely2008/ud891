@@ -364,7 +364,7 @@ h1 {
   body {
     background: #eee;
   }
-  div {
+  div:not(#awebChromeHelper) {
     position: relative;
     background: #f8f8f8;
     width: 90%;
